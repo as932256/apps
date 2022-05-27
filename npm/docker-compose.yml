@@ -13,6 +13,8 @@ services:
 
     # Uncomment the next line if you uncomment anything in the section
     # environment:
+      PUID: 1026 
+      PGID: 100
       # Uncomment this if you want to change the location of 
       # the SQLite DB file within the container
       # DB_SQLITE_FILE: "/data/database.sqlite"
