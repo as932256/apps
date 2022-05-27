@@ -5,16 +5,16 @@ services:
     restart: unless-stopped
     ports:
       # These ports are in format <host-port>:<container-port>
-      - '80:80' # Public HTTP Port
-      - '443:443' # Public HTTPS Port
-      - '81:81' # Admin Web Port
+      - '58080:80' # Public HTTP Port
+      - '55443:443' # Public HTTPS Port
+      - '58081:81' # Admin Web Port
       # Add any other Stream port you want to expose
       # - '21:21' # FTP
 
     # Uncomment the next line if you uncomment anything in the section
     environment:
-      -  PUID: 1026
-      -  PGID: 100
+      -  PUID=1026
+      -  PGID=100
       # Uncomment this if you want to change the location of 
       # the SQLite DB file within the container
       # DB_SQLITE_FILE: "/data/database.sqlite"
